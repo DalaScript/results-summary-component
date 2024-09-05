@@ -1,0 +1,395 @@
+/* fonts
+ ******************************/
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+$red: hsl(0, 100%, 67%);
+$yellow: hsl(39, 100%, 56%);
+$green: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+/* Gradients
+ ***************/
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+/* Neutral
+ ***************/
+$white: hsl(0, 0%, 100%);
+$very-light-blue: hsl(221, 100%, 96%);
+$light-blue: hsl(241, 100%, 89%);
+$dark-navy: hsl(224, 30%, 27%);
+
+$gradient-1: linear-gradient(180deg, $light-slate-blue 0%, hsl(252, 100%, 63%) 0.01%, $light-royal-blue 100%);
+
+/* Global Variables
+ ******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Variables
+ ******************************/
+body {
+    background-color: $very-light-blue;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    width: 100%;
+}
+
+.results-summary {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    &__result-container {
+        padding: 24px 0 40px;
+        border-radius: 0 0 32px 32px;
+        background: $gradient-1;
+        box-shadow: 0 30px 60px hsla(224, 82%, 58%, 0.15);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__summary-container {
+        padding: 24px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    &__result-container-title {
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: $light-blue;
+    }
+
+    &__result {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+
+        background: linear-gradient($violet-blue, $persian-blue);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__current-score {
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 72px;
+        text-align: center;
+
+        color: $white;
+    }
+
+    &__full-score {
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: $light-blue;
+
+        mix-blend-mode: normal;
+        opacity: 0.52;
+    }
+
+    &__rate-title {
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+
+        color: $white;
+    }
+
+    &__describe {
+        margin-top: 8px;
+        max-inline-size: 260px;
+
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+
+        color: $light-blue;
+    }
+
+    &__summary-title {
+        font-family: 'Hanken Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+
+        color: $dark-navy;
+    }
+
+    &__score-list {
+        width: 100%;
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__object {
+        padding: 17px 16px 18px;
+        width: 100%;
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &--reaction {
+            background: linear-gradient(0deg, hsla(0, 0%, 100%, 0.95), hsla(0, 0%, 100%, 0.95)), $red;
+
+            .results-summary__object-title {
+                color: $red;
+            }
+        }
+
+        &--memory {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), $yellow;
+
+            .results-summary__object-title {
+                color: $yellow;
+            }
+        }
+
+        &--verbal {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), $green;
+                
+            .results-summary__object-title {
+                color: $green;
+            }
+        }
+
+        &--visual {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), $blue;
+
+            .results-summary__object-title {
+                color: $blue;
+            }
+        }
+
+        &-title {
+            font-family: 'Hanken Grotesk';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    &__score-result {
+        &--taken {
+            font-family: 'Hanken Grotesk';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: right;
+            
+            color: $dark-navy;
+        }
+
+        &--total {
+            font-family: 'Hanken Grotesk';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: right;
+
+            color: $dark-navy;
+            opacity: 0.5;
+        }
+    }
+
+    &__btn {
+        padding: 17px 0 16px;
+        border: none;
+        width: 100%;
+        background-color: $dark-navy;
+        border-radius: 128px;
+
+        span {
+            font-family: 'Hanken Grotesk';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: right;
+            
+            color: $white;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 736px) {
+    main {
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .results-summary {
+        border-radius: 32px;
+        max-width: 736px;
+        width: 100%;
+        flex-direction: row;
+
+        & > * {
+            flex-basis: 50%;
+        }
+
+        &__result-container {
+            padding: 38px 0 46px;
+            border-radius: 32px;
+            box-shadow: none;
+            gap: 28px;
+        }
+
+        &__summary-container {
+            padding: 38px 40px 46px;
+            gap: 28px;
+        }
+
+        &__result-container-title {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        &__result {
+            margin-top: 7px;
+            width: 200px;
+            height: 200px;
+        }
+
+        &__current-score {
+            font-size: 72px;
+            line-height: 72px;
+        }
+
+        &__full-score {
+            margin-top: 4px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__rate-title {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        &__describe {
+            margin: 14px 0 9px;
+
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        &__summary-title {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        &__object {
+            padding: 17px 16px 16px;
+        }
+
+        &__object-title {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__score-result {
+            &--taken-score {
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            &--total-score {
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+
+        &__btn {
+            margin-top: 13px;
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .results-summary {
+        &__btn {
+            position: relative;
+            cursor: pointer;
+
+            & > span {
+                position: relative;
+            }
+
+            &::before {
+                content: '';
+                width: 100%;
+                height:  100%;
+                border-radius: 128px;
+                background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity .5s ease-out;
+
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+    }
+}
