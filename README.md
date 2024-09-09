@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/DalaScript/results-summary-component)
-- [Live Site URL](https://dalascript.github.io/results-summary-component/)
+- [Live Site URL](https://DalaScript.github.io/results-summary-component/)
 
 ## My process
 
@@ -44,6 +44,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- JavaScript
+- fetch API
 - bem - [Block Element Modifier](https://getbem.com/introduction/)
 - scss - [Sassy Cascading Style Sheets](https://sass-lang.com/documentation/at-rules/control/for/)
 
