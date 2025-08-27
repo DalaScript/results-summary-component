@@ -1,73 +1,82 @@
-# Frontend Mentor - Results summary component solution
+# Results Summary Component | Frontend Mentor
+
+**Challenge 11**
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
+---
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-  - [Connect with Me](#Connect-with-Me)
-  - [Coding Profiles](#Coding-Profiles)
+## 📚 Table of contents
 
-## Overview
+- [🔎 Overview](#-overview)
+  - [🎯 The challenge](#-the-challenge)
+  - [📸 Screenshot](#-screenshot)
+  - [🔗 Links](#-links)
+  - [🛠️ Built with](#️-built-with)
+- [🧠 My process](#-my-process)
+  - [🔙 Previous Challenge](#-previous-challenge)
+  - [🔜 Next Challenge](#-next-challenge)
+- [👤 About Me](#-about-me)
+  - [🌐 Connect with Me](#-connect-with-me)
+  - [💻 Coding Profiles](#-coding-profiles)
 
-### The challenge
+---
+
+## 🔎 Overview
+
+### 🎯 The challenge
 
 Users should be able to:
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+  - View the optimal layout for the interface depending on their device's screen size
+  - See hover and focus states for all interactive elements on the page
+  - **Bonus**: Use the local JSON data to dynamically populate the content
 
-### Screenshot
+### 📸 Screenshot
 
-![](./assets/images/screenshot/screenshot.jpg)
+![Live Preview Screenshot](./assets/images/screenshot/screenshot.jpg)
 
-### Links
+### 🔗 Links
 
-- [Solution URL](https://github.com/DalaScript/results-summary-component)
-- [Live Site URL](https://DalaScript.github.io/results-summary-component/)
+  - [🔴 Live Demo](https://dalascript.github.io/results-summary-component/)
+  - [🗂️ GitHub Repository](https://github.com/DalaScript/results-summary-component)
 
-## My process
+### 🛠️ Built with
 
-### Built with
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Flexbox
+  - Mobile-first workflow
+  - fetch API
+  - bem - [Block Element Modifier](https://getbem.com/introduction/)
+  - scss - [Sassy Cascading Style Sheets](https://sass-lang.com/documentation/at-rules/control/for/)
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- JavaScript
-- fetch API
-- bem - [Block Element Modifier](https://getbem.com/introduction/)
-- scss - [Sassy Cascading Style Sheets](https://sass-lang.com/documentation/at-rules/control/for/)
+---
 
-### Continued development
+## 🧠 My process
 
-First I want to finish the javascript course I'm taking on freecodecamp, I'm also going through the learning path on Frontendmentor, and after that I want to focus more on React, Next.js and Node.js.
+### 🔙 Previous Challenge
 
-### Useful resources
+  - Testimonials Grid Section | *Challenge 10* → [View Repository](https://github.com/DalaScript/testimonials-grid-section)
 
-- [ChatGPT](https://chatgpt.com/) - He is my hero, if I need something fast, if I can't understand something, or if I can't find it on the internet, I always ask him.
-- [W3Schools](https://www.w3schools.com/) - This is my favorite documentation platform I've been using since I started programming, it's the best explained resource.
-- [YouTube](https://www.youtube.com/) - I'm always looking for news and listening to other developers, sharing their experiences so that I can see many different solutions to a problem.
+### 🔜 Next Challenge
 
-## Author
+  - Meet Landing Page | *Challenge 12* → [View Repository](https://github.com/DalaScript/meet-landing-page)
 
-### Connect with Me
+---
 
-- [Instagram](https://www.instagram.com/DalaScript)
-- [YouTube](https://www.youtube.com/@DalaScript)
-- [TikTok](https://www.tiktok.com/@CodeWithDala)
+## 👤 About Me
 
-### Coding Profiles
+### 🌐 Connect with Me
 
-- [freeCodeCamp](https://www.freecodecamp.org/DalaScript)
-- [FrontendMentor](https://www.frontendmentor.io/profile/DalaScript)
-- [GitHub](https://github.com/DalaScript)
+  - [Instagram](https://www.instagram.com/DalaScript)
+  - [YouTube](https://www.youtube.com/@DalaScript)
+
+### 💻 Coding Profiles
+
+  - [freeCodeCamp](https://www.freecodecamp.org/DalaScript)
+  - [FrontendMentor](https://www.frontendmentor.io/profile/DalaScript)
+  - [GitHub](https://github.com/DalaScript)
+
+*🙌 Thanks for checking out my project! More coming soon. Stay tuned 🚀*
